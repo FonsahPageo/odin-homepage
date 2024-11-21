@@ -1,0 +1,49 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    background: rgb(21, 135, 216);
+    clip-path: polygon(0 0, 180% 0, 0 100%);
+    min-height: 300px;
+    padding: 20px;
+    position: relative;
+    color: #fff;
+}
+
+.about {
+    background-color: #fff;
+    padding: 10px;
+    max-width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+    max-height: 200px;
+    color: #333;
+}
+
+img {
+    max-height: 300px;
+}
+
+section{
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.project{
+    border: 1px solid silver;
+    padding: 20px;
+}
+
+footer {
+    display: flex;
+    background: rgb(21, 135, 216);
+    color: #fff;
+    padding: 10px;
+}
