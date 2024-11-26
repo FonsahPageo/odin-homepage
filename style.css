@@ -14,7 +14,7 @@ header {
     min-height: 300px;
     width: 100%;
     padding: 30px;
-    color: #fff;
+    /* color: #fff; */
 }
 
 .icons {
@@ -45,12 +45,12 @@ header {
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    max-width: 50%;
+    max-width: 60%;
     height: 220px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     position: relative;
     color: #333;
-    padding: 5px;
+    padding: 10px;
 }
 
 section {
@@ -91,7 +91,7 @@ footer {
     display: flex;
     background: rgb(21, 135, 216);
     color: #fff;
-    padding: 10px;
+    padding: 20px;
     width: 100%;
     justify-content: space-around;
     align-items: center;
@@ -107,25 +107,18 @@ footer img {
     max-height: 300px;
 }
 
-/* For Mobile (small screens) */
-@media (max-width: 380px) {
-    body{
-        font-size: 12px;
-    }
-    
+/* For Mobile (small screens) portrait*/
+@media (max-width: 382px) {    
     header {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         align-content: center;
-        /* clip-path: polygon(0 0, 150% 0, 0 60%); */
-        gap: 30px;
+        gap: 20px;
     }
 
     .user{
-        transform: scaleY(1);
-        background: center / cover no-repeat url("./images/secretary.jpg");
         display: flex;
         justify-content: center;
         width: 90%;
@@ -161,9 +154,23 @@ footer img {
     }
 }
 
+/* for mobile screens landscape */
+@media (min-width: 384px) and (max-width: 436px) {
+    body{
+        display: flex;
+    }
+    section{
+        grid-template: 1fr / 1fr 1fr;
+    }
+}
+
 /* For Tablets (medium screens) */
-@media (min-width: 769px) and (max-width: 1024px) {
-    body {
-        background-color: lightgreen;
+@media (min-width: 768px) and (max-width: 1024px) {
+    section{
+        grid: 1fr / 1fr 1fr
+    }
+
+    footer{
+        width: 90%;
     }
 }
